@@ -29,7 +29,7 @@ export class MoviesService {
   }
 
   deleteMovie(id: number): void {
-    // number 타입의 id를 인자로 받고, boolean을 반환.
+    // number 타입의 id를 인자로 받고, 아무것도 반환하지 않음.
     this.getOne(id); // getOne으로 해당 id의 영화 존재여부 사전체크 & 에러처리.
     this.movies = this.movies.filter((movie) => movie.id !== id);
   }
